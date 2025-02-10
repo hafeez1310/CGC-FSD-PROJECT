@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto,Arial;
+}
+.portfolio {
+    margin: 15px;
+    box-shadow: 2px 2px 8px 6px  gray;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-bottom: 50px;
+    background-color: #121213;
+}
+.header {
+    background-color: #1B1B1B;
+    padding-top: 18px;
+    padding-bottom: 16px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;   
+    padding: 17px 15px 17px 15px;   
+    transition: background-color 0.20s;
+}
+a:hover {
+    background-color: #00adb5;
+}
+.name {
+    font-size: 35px;
+    color: #AC4FC6;
+    background-color: #121213;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    color: white;
+    padding-top: 80px;
+}
+
+.intro {
+    width: 40%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    line-height: 25px;
+} 
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -50px;
+} 
+
+.data {
+    font-size: 18px;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 10px;
+    
+}
+
+
+.sub-title {
+    display: flex;
+    font-size: 20px;
+    color:white; 
+    text-decoration: underline;
+    justify-content: space-around;
+}
+
+.about {
+    width: 60%;
+    height: 50vh;
+} 
+.about h1 {
+    font-size: 28px;
+    padding-left: 30px;
+    color: #bebebe;
+}
+.about p {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 25px;
+    padding-left: 10px;
+
+}
+
+.about-title {
+    color: #bebebe;
+    text-align: center;
+    text-decoration: underline;
+    padding-left: 80px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.about-me {
+    display: flex;
+    color: white;
+    padding-left: 15px;
+    justify-content: space-around;
+}
+.about-me div {
+    display: flex;
+    margin-bottom: 20px;
+}
+.about-me div strong {
+    text-decoration: underline;
+}
+.about-me div p {
+    margin-left: 50px;
+}
+.education-status {
+    display: flex;
+    flex-direction: column;
+}
+.education {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
+    padding-left:50px;
+    padding-bottom: 25px;
+}
+.education h2 {
+    margin-left: 18px;
+}
+
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.technical-skill,
+.soft-skill {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.project-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #bebebe;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.project-one {
+    border-right-width: 2px  ;
+    border-right-style: solid;
+    border-right-color: #bebebe;
+
+}
+.project-one,
+.project-two{
+    color: white;
+    padding-left: 25px;
+}
+.project-one h3 {
+    font-size: 24px;
+    padding-left: 50px;
+    text-decoration:underline ;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+.project-one:first-child {
+    font-size: 18px;
+    padding-left: 10px;
+}
+.section3 {
+    display: flex;
+}
+
+.project-two h3 {
+    font-size: 24px;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+} 
+.project-two div {
+    font-size: 18px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.contact-title{
+    text-align: center;
+    font-size: 24px;
+    text-decoration: underline;
+    color: #bebebe;
+    padding-bottom: 60px;
+}
+.inputs {
+    display:flex;
+    flex-direction: column;
+}
+.inputs input {
+    margin-bottom: 20px;
+    height: 50px;
+    width: 600px;
+    border: 1px solid gray;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.inputs textarea {
+    height: 200px;
+    width: 600px;
+    border: 1px solid gray;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-top: 40px;
+}
