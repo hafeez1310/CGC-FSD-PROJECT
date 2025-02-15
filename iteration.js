@@ -45,23 +45,45 @@
 // console.log(loginUserMessage('hafeez'));
 
             //++++++++++++++++Electricity Bill Count using function++++++++++++++++++++++
-function electricityBill(unit) {
-    if( unit > 0 && unit<=50) {
-        console.log(`the price of the consumed unit is ${unit*2.5}`);
+// function electricityBill(unit) {
+//     if( unit > 0 && unit<=50) {
+//         console.log(`the price of the consumed unit is ${unit*2.5}`);
         
-    } else if (unit >50 && unit<=100){
-        console.log(`the price of the consumed unit is ${unit*4}`);
+//     } else if (unit >50 && unit<=100){
+//         console.log(`the price of the consumed unit is ${unit*4}`);
         
-    } else if (unit >100 && unit<=200){
-        console.log(`the price of the consumed unit is ${unit*6}`);
+//     } else if (unit >100 && unit<=200){
+//         console.log(`the price of the consumed unit is ${unit*6}`);
         
-    } else if (unit >200 && unit<=260){
-        console.log(`the price of the consumed unit is ${unit*8}`);
+//     } else if (unit >200 && unit<=260){
+//         console.log(`the price of the consumed unit is ${unit*8}`);
         
-    } else {
-        console.log(`Enter the correct unit`);
+//     } else {
+//         console.log(`Enter the correct unit`);
         
+//     }
+//     return 
+// }
+// electricityBill(220);
+
+
+    //*****************Calculating Electricity using if-else************************************ */
+
+    function electricityFare(unit) {
+        let price = 0;
+        
+        if(unit <= 50 ) {
+            console.log(`Your Bill Amount is : ${ unit*2.5 } `);
+        } else if(unit > 100 && unit <= 100) {
+            console.log(`Your Bill Amount is : ${ (50*2.5) + (unit-50)*4    }`);
+        } else if(unit > 100 && unit <= 200) {
+            console.log(`Your Bill Amount is : ${ (50*2.5) + (50*4) + (unit-100)*6 }`);
+        } else if (unit > 200 ) {
+            console.log(`Your Bill Amount is : ${ (50*2.5) + (50*4) + (100*6) + (unit-200)*8 }`);
+        } else {
+            console.log('Invalid Unit');
+            
+        }
     }
-    return 
-}
-electricityBill(220);
+
+    electricityFare(190)
