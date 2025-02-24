@@ -15,43 +15,56 @@ const sentence = "JavaScript is a powerful and popular programming language."
 const fruits = ["Apple", "Banana", "Mango", "Orange", "Grapes"];
 
 /*
-console.log(fruits.push("Pineapple"), fruits);
-console.log(fruits.shift(), fruits);
-console.log(fruits.splice(1,0,"straberry"), fruits)
-console.log(fruits.indexOf("Mango"),fruits);
-console.log(fruits.splice(3,1), fruits);
-console.log(fruits.sort(), fruits);
-console.log(fruits.reverse(), fruits);
+console.log(fruits.push("Pineapple"), fruits);    // Push() Method is used to add the element in the array
+console.log(fruits.shift(), fruits);              // Shift() Method is used to remove the element from begining in the array
+console.log(fruits.splice(1,0,"straberry"), fruits) // splice() Method is used to add the element in the middle of the array by just give the index value
+console.log(fruits.indexOf("Mango"),fruits);       // indexOf() Method is used to find the index value of element in a array 
+console.log(fruits.splice(3,1), fruits);            
+console.log(fruits.sort(), fruits);                 //sort() Method is used to sort the element in alphabetical order
+console.log(fruits.reverse(), fruits);              // reverse() Method is used to reverse the element of array
                                      */
 
 
 
 
   // **********************Task 3: Object Constructor Function**************************
-function Person(name, age, gender) {
+function Person(name, age, gender) {         // we created Person Constructor Function
     this.name = name;
     this.age = age;
     this.gender = gender;
 
-    this.greet = function greet() {
+    this.greet = function greet() {           // we created greet() Method 
         console.log(`Hello, my name is ${this.name}`);
     }
+
+    this.isAdult = function() {               // we created idAdult() Method to check the person is adult or not
+      return console.log(this.age>=18? true : false); 
+    }
+
+    this.checkAdult = function() {    // isAdult() Method that returns true if the age is 18 or above, otherwise false.
+      this.age>=18? this.name : false;
+    }
+
 }
 // creating three instances of function Person
-const person1 = new Person('hafeez', 20, "Male" )
+const person1 = new Person('hafeez', 7, "Male" )
 const person2 = new Person("Sufiyan", 22, "Male")
-const person3 = new Person("Madani", 21, "Male")
+const person3 = new Person("Madani", 31, "Male")
 
-// console.log(person1);
-// console.log(person1.greet())
+  const people = [person1,person2,person3];
+    const adult = people.filter()
 
+console.log(person1);
+person1.greet()
+person1.isAdult()
+// console.log("Adults", adult);
 
 // console.log(person2);
-// console.log(person2.greet())
+// person2.greet()
 
 
 // console.log(person3);
-// console.log(person3.greet())
+// person3.greet()
 
 
 
@@ -64,7 +77,7 @@ const person3 = new Person("Madani", 21, "Male")
     features : ["Air Conditioning", "Sunroof", "Bluethooth"]
   }
 
-  car.features.push("mileage")
+  car.features.push("mileage")       // push() method add the mileage property to car
   delete car.model
 //   console.log(car);
 
@@ -93,11 +106,11 @@ const person3 = new Person("Madani", 21, "Male")
 
   ]
 
-  console.log(Student[1].grade.science) // retrieve the science grade of the second student
-  console.log(Student[0].grade.math = 95); //Update the math grade of the first student.
-  console.log(Student[0].grade.English = 99) //Add a new subject and grade to one of the students.
+  // console.log(Student[1].grade.science) // retrieve the science grade of the second student
+  // console.log(Student[0].grade.math = 95); //Update the math grade of the first student.
+  // console.log(Student[0].grade.English = 99) //Add a new subject and grade to one of the students.
 
-    console.log(Student);
+    // console.log(Student);
 
 
 
